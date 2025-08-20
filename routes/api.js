@@ -85,7 +85,7 @@ app.route('/api/books')
         const result = await Book.findByIdAndDelete(bookid);
         if (!result) return res.send('no book exists');
 
-        res.send('delete successful');
+        res.send('complete delete successful');
       } catch (err) {
         res.status(500).send('server error');
       }
